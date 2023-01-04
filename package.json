@@ -1,17 +1,37 @@
 {
   "name": "@igorjs/eslint-config-strict-js",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0-alpha.1",
+  "description": "Strict Javascript ESLint config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igorjs/eslint-config-strict-js.git"
+  },
+  "author": "Igor Santos <igor@igorjs.io> (https://igorjs.io)",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "dependencies": {
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-function-name": "^2.0.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^27.1.7",
+    "@babel/core": "^7.20.7",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/eslint-plugin": "^7.19.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-jest": "^27.2.0",
     "eslint-plugin-jest-dom": "^4.0.3",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-security": "^1.5.0",
     "eslint-plugin-sonarjs": "^0.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0"
   }
 }
